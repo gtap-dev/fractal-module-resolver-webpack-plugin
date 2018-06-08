@@ -1,6 +1,6 @@
 {
   "name": "@gotoandplay/fractal-module-resolver-webpack-plugin",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "A webpack resolver plugin that resolves component imports through Fractal API",
   "main": "src/index.js",
   "scripts": {
