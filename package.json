@@ -1,0 +1,24 @@
+{
+  "name": "@gotoandplay/fractal-module-resolver-webpack-plugin",
+  "version": "0.0.0",
+  "description": "A webpack resolver plugin that resolves component imports through Fractal API",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "npm run lint",
+    "lint": "eslint \"src/**/*.js\"",
+    "preversion": "npm run lint"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gtap-dev/fractal-module-resolver-webpack-plugin.git"
+  },
+  "author": "Mihkel Eidast <mihkel@play.ee> (https://play.ee)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/gtap-dev/fractal-module-resolver-webpack-plugin/issues"
+  },
+  "homepage": "https://github.com/gtap-dev/fractal-module-resolver-webpack-plugin#readme",
+  "devDependencies": {
+    "eslint": "^4.19.1"
+  }
+}
