@@ -4,11 +4,16 @@ class FractalModuleResolver {
     constructor(options) {
         this.options = options;
         this.fractal = this.options.fractal;
+        this.blacklist = this.options.blacklist || [];
     }
 
     apply(resolver) {
         resolver.getHook('described-resolve').tapAsync('FractalModuleResolver', (request, resolveContext, callback) => {
             return this.fractal.components.load().then(() => {
+                if (this.blacklist.includes(request.request.replace('@', ''))) {
+                    return callback();
+                }
+
                 try {
                     const component = this.fractal.components.find(request.request);
 
